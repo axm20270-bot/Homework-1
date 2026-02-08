@@ -17,16 +17,6 @@ Most importantly, I tested an invented word newestest that wasn't in the origina
 
 The implementation shows how modern NLP models handle vocabulary limitations by learning reusable word parts rather than requiring every possible word to be in their vocabulary.
 
-👩‍🎓 Student Information
-Name: MOPARTHI APARNA
-
-Course: CS5760 Natural Language Processing
-
-Department: Computer Science & Cybersecurity
-
-Semester: Spring 2026
-
-Assignment: Homework 1, Question 2.2
 
 # Clone or download the file, then run:
 python q2.2.py
