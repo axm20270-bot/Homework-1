@@ -145,6 +145,7 @@ newestest    -> ['new', 'e', 's', 't', 'e', 's', 't', '_']
 📝 Code Structure
 
 # Main Components:
+
    -Corpus Preparation → prepare_corpus()
    -Frequency Counting → get_pair_counts()
    -Pair Merging → merge_pair()
