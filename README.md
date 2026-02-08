@@ -42,12 +42,13 @@ Byte Pair Encoding (BPE) is a data compression algorithm adapted for tokenizatio
 This approach helps handle Out-Of-Vocabulary (OOV) words by breaking them into known subword components.
 
 🔧 Implementation Details
-Core Functions
 
-  prepare_corpus() -Adds end-of-word markers and splits words into characters
-  get_pair_counts() -Counts frequency of adjacent symbol pairs
-  merge_pair() -Merges a specific pair throughout the corpus
-  bpe_segment() -Segments new words using learned merge rules
+  Core Functions
+
+    -prepare_corpus() -Adds end-of-word markers and splits words into characters
+    -get_pair_counts() -Counts frequency of adjacent symbol pairs
+    -merge_pair() -Merges a specific pair throughout the corpus
+    -bpe_segment() -Segments new words using learned merge rules
 
 
 Algorithm Steps
