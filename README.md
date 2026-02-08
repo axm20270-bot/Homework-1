@@ -159,6 +159,68 @@ The script tests segmentation on five words:
     widest - Word with similar morphological structure
     newestest - OOV word to demonstrate subword composition
 
+📊 Example Output
+
+          Original corpus: low low low low low lowest lowest newer newer newer newer newer newer wider wider wider new new
+      
+      Initial corpus (with '_'):
+        l o w _
+        l o w _
+        l o w _
+      
+      Performing BPE merges:
+      --------------------------------------------------
+      Step 1: Merge ('e', 'r') -> 'er' (freq: 9)
+        Sample: l o w _
+        Vocabulary size: 11
+      
+      Step 2: Merge ('er', '_') -> 'er_' (freq: 9)
+        Sample: l o w _
+        Vocabulary size: 11
+      
+      Step 3: Merge ('n', 'e') -> 'ne' (freq: 8)
+        Sample: l o w _
+        Vocabulary size: 11
+      
+      Step 4: Merge ('ne', 'w') -> 'new' (freq: 8)
+        Sample: l o w _
+        Vocabulary size: 11
+      
+      Step 5: Merge ('l', 'o') -> 'lo' (freq: 7)
+        Sample: lo w _
+        Vocabulary size: 10
+      
+      Step 6: Merge ('lo', 'w') -> 'low' (freq: 7)
+        Sample: low _
+        Vocabulary size: 10
+      
+      Step 7: Merge ('new', 'er_') -> 'newer_' (freq: 6)
+        Sample: low _
+        Vocabulary size: 11
+      
+      Step 8: Merge ('low', '_') -> 'low_' (freq: 5)
+        Sample: low_
+        Vocabulary size: 12
+      
+      Step 9: Merge ('w', 'i') -> 'wi' (freq: 3)
+        Sample: low_
+        Vocabulary size: 11
+      
+      Step 10: Merge ('wi', 'd') -> 'wid' (freq: 3)
+        Sample: low_
+        Vocabulary size: 10
+      
+      
+      ==================================================
+      Testing BPE Segmentation:
+      ==================================================
+      new          -> ['new', '_']
+      newer        -> ['newer_']
+      lowest       -> ['low', 'e', 's', 't', '_']
+      widest       -> ['wid', 'e', 's', 't', '_']
+      newestest    -> ['new', 'e', 's', 't', 'e', 's', 't', '_']
+
+
 📈 Educational Value
 This implementation helps understand:
 
