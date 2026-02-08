@@ -1,5 +1,16 @@
 # Homework-1
 
+👩‍🎓 Student Information
+Name: MOPARTHI APARNA
+
+Course: CS5760 Natural Language Processing
+
+Department: Computer Science & Cybersecurity
+
+Semester: Spring 2026
+
+Assignment: Homework 1, Question 2.2
+
 BPE Tokenizer Implementation
 
 📌 Homework Overview
