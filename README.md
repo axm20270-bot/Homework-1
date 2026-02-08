@@ -145,12 +145,12 @@ newestest    -> ['new', 'e', 's', 't', 'e', 's', 't', '_']
 📝 Code Structure
 
 # Main Components:
-   Corpus Preparation → prepare_corpus()
-   Frequency Counting → get_pair_counts()
-   Pair Merging → merge_pair()
-   Word Segmentation → bpe_segment()
-   Training Loop → 10 iterations of merging
-   Testing → Segmentation of 5 test words
+   -Corpus Preparation → prepare_corpus()
+   -Frequency Counting → get_pair_counts()
+   -Pair Merging → merge_pair()
+   -Word Segmentation → bpe_segment()
+   -Training Loop → 10 iterations of merging
+   -Testing → Segmentation of 5 test words
 
 🧪 Testing the Implementation
 The script tests segmentation on five words:
