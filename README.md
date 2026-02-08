@@ -151,13 +151,13 @@ newestest    -> ['new', 'e', 's', 't', 'e', 's', 't', '_']
    6. Testing → Segmentation of 5 test words
 
 🧪 Testing the Implementation
-The script tests segmentation on five words:
 
-    new - Base word from corpus
-    newer - Comparative form with suffix
-    lowest - Superlative form
-    widest - Word with similar morphological structure
-    newestest - OOV word to demonstrate subword composition
+      The script tests segmentation on five words:
+          new - Base word from corpus
+          newer - Comparative form with suffix
+          lowest - Superlative form
+          widest - Word with similar morphological structure
+          newestest - OOV word to demonstrate subword composition
 
 📊 Example Output
 
