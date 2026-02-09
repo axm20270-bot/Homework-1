@@ -27,9 +27,6 @@ BPE Tokenizer Implementation
   The implementation shows how modern NLP models handle vocabulary limitations by learning reusable word parts rather than requiring every possible word to be in their vocabulary.
 
 
-# Clone or download the file, then run:
-python q2.2.py
-
 📖 What is BPE?
 
       Byte Pair Encoding (BPE) is a data compression algorithm adapted for tokenization in Natural Language Processing. It works by:
@@ -110,14 +107,13 @@ Step 10: Merge ('wi', 'd') -> 'wid' (freq: 3)
   Vocabulary size: 10
 
 
-==================================================
 Testing BPE Segmentation:
-==================================================
-new          -> ['new', '_']
-newer        -> ['newer_']
-lowest       -> ['low', 'e', 's', 't', '_']
-widest       -> ['wid', 'e', 's', 't', '_']
-newestest    -> ['new', 'e', 's', 't', 'e', 's', 't', '_']
+
+      new          -> ['new', '_']
+      newer        -> ['newer_']
+      lowest       -> ['low', 'e', 's', 't', '_']
+      widest       -> ['wid', 'e', 's', 't', '_']
+      newestest    -> ['new', 'e', 's', 't', 'e', 's', 't', '_']
 
 
 🎯 Key Features
